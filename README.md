@@ -54,14 +54,12 @@ class MyDependency {
 }
 ```
 ### Record file specs
-Required metadata
+Define some required metadata for JTM to run. Additional metadata should not crash JTM. Great if the file is human readable.
 1. Class name & method signatures
 1. Input/output in portable format. (XML, JSON, ...etc)
 1. [TBD] Call order
 1. [TBD] Thread id
 1. [TBD] Object identifier, incase there are multiple instances of same dependency.
-
-Great if human readable.
 
 Example
 ```
@@ -88,7 +86,7 @@ dependencyCall: Output com.demo.MyDependency$queryObjects(Input)
 
 ## Additional Features
 ### Replay options
-1. Configure to use replay, or call real service per dependency.
+1. Configure to use mock or call real per dependency.
 2. Class renaming support.
 3. Input matching option: Match exact input/Match partial input/Match by call order and className.
 ### Recording on methods
