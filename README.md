@@ -20,7 +20,7 @@ It is named "JavaTimeMachine" because it feels like we went back in time to chan
 ``java MyApplication --JTM_RUN_MODE=[RECORD/REPLAY] --JTM_RECORD_FILE_PATH=[record_file_path]``
 - Future: read from config file/DI framework.
 ### Programming interface
-[TBD] We want to make use of aspect oriented programming. In the vanilla version, we define the `@DependencyCall` annotation. Developers can imagine the equivalent code: 
+We will use aspect oriented programming. In the vanilla version, we define the `@DependencyCall` annotation. Developers can imagine the equivalent code: 
 ```java
 class MyDependency {
   @DependencyCall
